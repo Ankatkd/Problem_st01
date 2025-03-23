@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 2rem;
+  }
+  
+  .formCard {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logoContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    left: 12px;
+    color: #64748b;
+  }
+  
+  .form-input {
+    padding-left: 40px !important;
+  }
+  
+  .passwordToggle {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .forgotPassword {
+    text-align: right;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signupLink {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #64748b;
+  }
+  
+  .buttonLoader {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .buttonLoader span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .buttonLoader span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .buttonLoader span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .buttonLoader span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+    .formCard {
+      padding: 2rem 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.75rem;
+    }
+  }
+  
+  

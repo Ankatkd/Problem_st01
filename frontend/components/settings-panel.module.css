@@ -1,0 +1,205 @@
+/* Base styles for the settings panel */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.panel {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: var(--hover-background);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--input-background);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.input.invalid {
+  border-color: #ef4444;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.helpText {
+  color: var(--secondary-text-color);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.modeToggle {
+  display: flex;
+  gap: 10px;
+  background-color: var(--input-background);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.modeButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.modeButton.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.apiFormat {
+  margin-top: 20px;
+}
+
+.apiFormat h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.codeBlock {
+  background-color: var(--input-background);
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancelButton,
+.saveButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.cancelButton {
+  background-color: var(--input-background);
+  color: var(--text-color);
+}
+
+.cancelButton:hover {
+  background-color: var(--hover-background);
+}
+
+.saveButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.saveButton:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Light Mode Variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #1e293b;
+  --secondary-text-color: #64748b;
+  --input-background: #f8fafc;
+  --border-color: #e2e8f0;
+  --hover-background: #f1f5f9;
+  --primary-color: #3b82f6;
+}
+
+/* Dark Mode Variables */
+.darkMode {
+  --background-color: #1e293b;
+  --text-color: #f8fafc;
+  --secondary-text-color: #94a3b8;
+  --input-background: #334155;
+  --border-color: #475569;
+  --hover-background: #475569;
+  --primary-color: #3b82f6;
+}
